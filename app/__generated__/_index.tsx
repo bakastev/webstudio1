@@ -75,19 +75,19 @@ data-ws-component="Span">
 </Span>
 </Heading>
 </Box>
-<AnimatedBox
+<Box
 data-ws-id="6lDFTBHpEnn0hxQpuUCZH"
+data-ws-component="Box">
+<AnimatedBox
+data-ws-id="mE2x3WDtXUT-36J_D5jsT"
 data-ws-component="Box"
-animate={{ x: 100 }}
+  animate={{ x: 100 }}
 transition={{
   ease: "linear",
   duration: 2,
   x: { duration: 1 }
 }} 
 >
-<Box
-data-ws-id="mE2x3WDtXUT-36J_D5jsT"
-data-ws-component="Box">
 <Text
 data-ws-id="5gKfnVa_xu-1e0iFgqx4F"
 data-ws-component="Text"
@@ -106,8 +106,8 @@ data-ws-component="Bold">
 </Bold>
 </Link>
 </Box>
-</AnimatedBox>
 </Box>
+</AnimatedBox>
 <Box
 data-ws-id="pF8PI2rO7876IBLVLx7vF"
 data-ws-component="Box">
