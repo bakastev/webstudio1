@@ -81,9 +81,12 @@ data-ws-component="Box">
 <Box
 data-ws-id="mE2x3WDtXUT-36J_D5jsT"
 data-ws-component="Box"
-initial={{ opacity: 0 }}
-animate={{ opacity: 1 }}
-transition={{ duration: 1 }}  
+animate={{ x: 100 }}
+transition={{
+  ease: "linear",
+  duration: 2,
+  x: { duration: 1 }
+}} 
 >
 <Text
 data-ws-id="5gKfnVa_xu-1e0iFgqx4F"
