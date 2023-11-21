@@ -23,7 +23,7 @@ import {
 } from "../__generated__/_index.tsx";
 import css from "../__generated__/index.css";
 import { assetBaseUrl, imageBaseUrl, imageLoader } from "~/constants.mjs";
-
+import { motion } from 'framer-motion';
 export type PageData = {
   site?: SiteMeta;
   page: PageType;
