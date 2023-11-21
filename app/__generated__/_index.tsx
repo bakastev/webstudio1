@@ -7,12 +7,19 @@ import type { Asset, ImageAsset, SiteMeta } from "@webstudio-is/sdk";
 import { Body as Body, Box as Box, Heading as Heading, Text as Text, Paragraph as Paragraph, Image as Image, Bold as Bold, HtmlEmbed as HtmlEmbed, Label as Label, Input as Input, Button as Button, Textarea as Textarea, Slot as Slot, Fragment as Fragment, Span as Span } from "@webstudio-is/sdk-components-react";
 import { Link as Link, Form as Form } from "@webstudio-is/sdk-components-react-remix";
 import { Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
+import { motion } from 'framer-motion';
 
 export const fontAssets: Asset[] = [{"id":"fc5457a0-9130-4f63-99c1-3cbe273d0691","name":"DMSans-VariableFont_opsz_wght_024TU8xKTl_JWSQ8iEN-W.ttf","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":238984,"type":"font","createdAt":"2023-08-30T20:58:14.976Z","format":"ttf","meta":{"family":"DM Sans","variationAxes":{"opsz":{"name":"Optical size","min":9,"default":9,"max":40},"wght":{"name":"Weight","min":100,"default":400,"max":1000}}}}]
 export const imageAssets: ImageAsset[] = [{"id":"2119a892-74b9-445f-826f-5dfd14b3d9f1","name":"josh-rocklage-HAAsKeZbHAc-unsplash_NE1qfBY6TNANGiAFuXiKA.jpg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":1074399,"type":"image","format":"jpeg","createdAt":"2023-09-18T18:23:56.511Z","meta":{"width":3240,"height":2160}},{"id":"973a83e0-11b9-491a-b292-b7583c2fac66","name":"rocco-dipoppa-_uDj_lyPVpA-unsplash_KeTV-4SQ04K-NYYOPSopk.jpg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":536800,"type":"image","format":"jpeg","createdAt":"2023-08-31T19:50:19.787Z","meta":{"width":1920,"height":1216}},{"id":"b96fe4c2-52d4-41a3-b196-8486d9cba1df","name":"Twitter_Icon_White_BVEhCDE-LW9kXpzM-xuKP.svg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":845,"type":"image","format":"svg","createdAt":"2023-08-31T05:27:48.409Z","meta":{"width":16,"height":13}},{"id":"06432619-c391-4d15-a0e3-1cfbd5bcca9d","name":"LinkedIn_Icon_White_rDiQBCYd17Isq8l8CP2Nn.svg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":749,"type":"image","format":"svg","createdAt":"2023-08-31T05:27:48.406Z","meta":{"width":15,"height":15}},{"id":"3403ce87-d9b6-4f0f-bd00-ac891f4caf2a","name":"Facebook_Icon_White_GwMppwRTnN0knd6Pgzgcd.svg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":529,"type":"image","format":"svg","createdAt":"2023-08-31T05:27:48.335Z","meta":{"width":9,"height":18}},{"id":"2578e5f8-b137-4c82-a29a-20fdad5fd5e1","name":"Pinterest_Icon_White_Y5L0cQG-4f3vBZY-4e2uU.svg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":1213,"type":"image","format":"svg","createdAt":"2023-08-31T05:27:48.328Z","meta":{"width":13,"height":17}},{"id":"1a440c67-b3af-4ce6-85a0-fdc0c6e6a9f2","name":"leo-wieling-bG8U3kaZltE-unsplash_0XfLoiqtZtJeO11OGIl1Q.jpg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":278983,"type":"image","format":"jpeg","createdAt":"2023-08-31T01:43:26.453Z","meta":{"width":1280,"height":1920}},{"id":"bf6bd9fa-cc07-4a87-bb33-b68f0c9618bf","name":"luke-thornton-JNl7o-Mj2cc-unsplash_0qWTlSv7B4rmUKvB_Y1cl.jpg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":613792,"type":"image","format":"jpeg","createdAt":"2023-08-31T01:26:25.342Z","meta":{"width":1920,"height":1280}},{"id":"4cab4c9d-3c3f-4a16-855d-bb7fb25ff0b4","name":"kyle-smith-x0dtRYZovLo-unsplash_BahcweLIUAdV9LkMyFU6v.jpg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":650871,"type":"image","format":"jpeg","createdAt":"2023-08-31T01:26:25.273Z","meta":{"width":1280,"height":1920}},{"id":"e753cac6-d978-4b4c-9c52-155e2367ffae","name":"alex-wong-RIo45CycGCs-unsplash_5z3vcfZKOncrqJsrUk0Dg.jpg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":520576,"type":"image","format":"jpeg","createdAt":"2023-08-31T01:26:25.160Z","meta":{"width":1920,"height":1280}},{"id":"624f0661-c4de-4504-b7c5-e534e38472b6","name":"Facebook_1bZ8k5eTlmlCbZ8bVdC_D.svg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":535,"type":"image","format":"svg","createdAt":"2023-08-30T06:01:39.102Z","meta":{"width":8,"height":18}},{"id":"b7ab152f-0263-45b3-a0af-84196c2d9be6","name":"Twitter_8ER4uHstrL3pVvvllcY5i.svg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":865,"type":"image","format":"svg","createdAt":"2023-08-30T06:01:39.096Z","meta":{"width":16,"height":13}},{"id":"fb7c20d8-f647-49f6-a811-a43bac5c7077","name":"LinkedIn_cWCVUBxqrbsxuDSdF1gAE.svg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":755,"type":"image","format":"svg","createdAt":"2023-08-30T06:01:39.094Z","meta":{"width":15,"height":15}},{"id":"e04b2f18-eff3-43d7-a8a5-e0fe61d8f3d3","name":"logo-icon-color_7lPMMn5N1_sztj7QUZvvx.svg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":16276,"type":"image","format":"svg","createdAt":"2023-03-24T21:43:47.942Z","meta":{"width":280,"height":211}},{"id":"fd5358bb-1c6a-444a-88e0-a372dd971196","name":"cib-github_lGytwpLtQ6Y-OqmnrFxq2.svg","description":null,"projectId":"0dda8e9d-11be-4733-9c83-bbc17affb289","size":1458,"type":"image","format":"svg","createdAt":"2023-02-25T03:33:13.012Z","meta":{"width":24,"height":24}}]
 export const pageData: PageData = {"page":{"id":"ubi4k5x4dJzJCCchMIwtC","name":"Home","title":"Home","meta":{},"rootInstanceId":"quj5c9wlKZkBNobFjf6z8","path":""}};
 export const user: { email: string | null } | undefined = {"email":"sbaka81@googlemail.com"};
 export const projectId = "0dda8e9d-11be-4733-9c83-bbc17affb289";
+
+const AnimatedBox = ({ children, ...props }) => (
+  <motion.div {...props}>
+    {children}
+  </motion.div>
+);
 
 const Page = (props: { scripts?: ReactNode }) => {
 let [accordionValue, set$accordionValue] = useState<any>("0")
@@ -73,7 +80,11 @@ data-ws-id="6lDFTBHpEnn0hxQpuUCZH"
 data-ws-component="Box">
 <Box
 data-ws-id="mE2x3WDtXUT-36J_D5jsT"
-data-ws-component="Box">
+data-ws-component="Box"
+initial={{ opacity: 0 }}
+animate={{ opacity: 1 }}
+transition={{ duration: 1 }}  
+>
 <Text
 data-ws-id="5gKfnVa_xu-1e0iFgqx4F"
 data-ws-component="Text"
