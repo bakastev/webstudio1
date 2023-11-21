@@ -81,12 +81,8 @@ data-ws-component="Box">
 <AnimatedBox
 data-ws-id="mE2x3WDtXUT-36J_D5jsT"
 data-ws-component="Box"
-  animate={{ x: 100 }}
-transition={{
-  ease: "linear",
-  duration: 2,
-  x: { duration: 1 }
-}} 
+animate={{ x: 100 }}
+transition={{ type: "spring", stiffness: 100 }}
 >
 <Text
 data-ws-id="5gKfnVa_xu-1e0iFgqx4F"
