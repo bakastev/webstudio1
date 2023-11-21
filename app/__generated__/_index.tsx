@@ -60,9 +60,12 @@ data-ws-id="RAplALchDa3Qianckm_4Q"
 data-ws-component="Link">
 {"Voiceworks Studios"}
 </Link>
-<Box
+<AnimatedBox
 data-ws-id="8KtB-gVEWANmmIUxPBkPL"
-data-ws-component="Box">
+data-ws-component="Box"
+animate={{ x: 100 }}
+transition={{ type: "spring", stiffness: 100 }}
+>
 <Heading
 data-ws-id="kh3BIqzrb2WhzewNaWqo1"
 data-ws-component="Heading"
@@ -74,16 +77,13 @@ data-ws-component="Span">
 {"Your Story"}
 </Span>
 </Heading>
-</Box>
+</AnimatedBox>
 <Box
 data-ws-id="6lDFTBHpEnn0hxQpuUCZH"
 data-ws-component="Box">
-<AnimatedBox
+<Box
 data-ws-id="mE2x3WDtXUT-36J_D5jsT"
-data-ws-component="Box"
-animate={{ x: 100 }}
-transition={{ type: "spring", stiffness: 100 }}
->
+data-ws-component="Box">
 <Text
 data-ws-id="5gKfnVa_xu-1e0iFgqx4F"
 data-ws-component="Text"
@@ -103,7 +103,7 @@ data-ws-component="Bold">
 </Link>
 </Box>
 </Box>
-</AnimatedBox>
+</Box>
 <Box
 data-ws-id="pF8PI2rO7876IBLVLx7vF"
 data-ws-component="Box">
